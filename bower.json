@@ -1,0 +1,20 @@
+{
+  "name": "piecemeta-doc",
+  "version": "1.0.0",
+  "authors": [
+    "Anton Koch <anton.koch@gmail.com>"
+  ],
+  "description": "Documentation for PieceMeta API based on Carte",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
