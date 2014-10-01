@@ -13,12 +13,15 @@ Create a new Package.
 
 * The headers must include a **valid [AccessToken](#/post-access-token)**.
 * **The body can't be empty** and must at least include the title.
+* You can set the **reference_package_id** to extend it's data with the new package.
+* You can not be the owner of the **reference_package_id**. Add Channels and Streams to your Packages directly.
 
 #### Body
 
     {
         title: String,
-        description: String
+        description: String,
+        reference_package_id: String
     }
 
 ### Response
@@ -29,6 +32,7 @@ Returns a Package object.
 
     {
         id: String,
+        reference_package_id: String,
         user_id: String,
         title: String,
         description: String,

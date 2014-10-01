@@ -1,7 +1,5 @@
 {
-    "name": "carte",
-    "description": "Simple API reference",
-    "version": "0.0.1",
-    "local": ["boot"],
-    "paths": ["lib"]
+    "name": "piecemeta-apidocs",
+    "description": "Reference for PieceMeta API based on Carte",
+    "version": "1.0"
 }

@@ -1,11 +1,10 @@
 {
-  "name": "piecemeta-doc",
+  "name": "piecemeta-apidocs",
   "version": "1.0.0",
   "authors": [
     "Anton Koch <anton.koch@gmail.com>"
   ],
-  "description": "Documentation for PieceMeta API based on Carte",
-  "license": "MIT",
+  "description": "Reference for PieceMeta API based on Carte",
   "private": true,
   "ignore": [
     "**/.*",
