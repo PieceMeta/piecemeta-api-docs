@@ -1,6 +1,6 @@
 ---
 category: Users
-path: '/user/me/api_key'
+path: '/users/me/api_keys'
 title: 'ApiKey'
 type: 'GET'
 
