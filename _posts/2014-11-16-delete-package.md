@@ -1,6 +1,6 @@
 ---
 category: Packages
-path: '/packages/:id'
+path: '/packages/:uuid'
 title: 'Delete'
 type: 'DELETE'
 
@@ -11,7 +11,7 @@ Delete an existing Package.
 
 ### Request
 
-* **:id** must be an existing Package id that you own.
+* **:uuid** must be an existing Package UUID that you own.
 * The headers must include a **valid [AccessToken](#/post-access-token)**.
 
 ### Response
@@ -21,8 +21,8 @@ Returns the deleted Package.
 #### Body
 
     {
-        id: String,
-        user_id: String,
+        uuid: String,
+        user_uuid: String,
         title: String,
         description: String,
         created_at: String,

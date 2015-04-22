@@ -1,6 +1,6 @@
 ---
 category: Packages
-path: '/packages/:id'
+path: '/packages/:uuid'
 title: 'Get'
 type: 'GET'
 
@@ -11,7 +11,7 @@ Retrieve a Package.
 
 ### Request
 
-* **:id** must be an existing Package id.
+* **:uuid** must be an existing Package UUID.
 * Anonymous requests are allowed.
 
 ### Response
@@ -21,8 +21,8 @@ Returns a Package object.
 #### Body
 
     {
-        id: String,
-        user_id: String,
+        uuid: String,
+        user_uuid: String,
         title: String,
         description: String,
         created_at: Date,

@@ -1,6 +1,6 @@
 ---
 category: Streams
-path: '/streams/:id'
+path: '/streams/:uuid'
 title: 'Delete'
 type: 'DELETE'
 
@@ -11,7 +11,7 @@ Delete an existing Stream.
 
 ### Request
 
-* **:id** must be an existing Stream id that you own.
+* **:uuid** must be an existing Stream id that you own.
 * The headers must include a **valid [AccessToken](#/post-access-token)**.
 
 ### Response
@@ -21,8 +21,8 @@ Returns the deleted Stream.
 #### Body
 
     {
-        id: String,
-        channel_id: String,
+        uuid: String,
+        channel_uuid: String,
         title: String,
         group: String,
         frames: [Number],

@@ -17,9 +17,7 @@ Retrieve a list of available [Streams](#/get-stream) for a [Channel](#/get-chann
 
 ### Response
 
-Returns an array of Stream objects.
-
-* **frames** is sent as an array of floats.
+Returns an array of Stream objects but does not send the actual frame data for each stream. To get the data, use the GET method for particular [Streams](#/get-stream).
 
 #### Body
 
@@ -29,7 +27,6 @@ Returns an array of Stream objects.
             channel_id: String,
             title: String,
             group: String,
-            frames: [Number],
             fps: Number,
             created_at: Date,
             updated_at: Date

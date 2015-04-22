@@ -15,6 +15,7 @@ Listed are all actions available to non-authenticated users:
 * `GET` [Get channel](#/get-channel)
 * `GET` [List streams](#/list-streams)
 * `GET` [Get stream](#/get-stream)
+* `GET` [Get exports](#/get-exports)
 * `GET` [Get public user profile](#/get-user)
 
 ### Authenticated Requests

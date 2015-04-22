@@ -1,6 +1,6 @@
 ---
 category: Channels
-path: '/channels/:id'
+path: '/channels/:uuid'
 title: 'Get'
 type: 'GET'
 
@@ -11,7 +11,7 @@ Retrieve a Package.
 
 ### Request
 
-* **:id** must be an existing Channel id.
+* **:uuid** must be an existing Channel UUID.
 * Anonymous requests are allowed.
 
 ### Response
@@ -21,10 +21,10 @@ Returns a Channel object.
 #### Body
 
     {
-        id: String,
-        package_id: String,
+        uuid: String,
+        package_uuid: String,
         title: String,
-        parent_channel_id: String,
+        parent_channel_uuid: String,
         created_at: Date,
         updated_at: Date
     }

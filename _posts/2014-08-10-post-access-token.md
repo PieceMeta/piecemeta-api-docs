@@ -31,7 +31,7 @@ Sends back an AccessToken object. If the current token is expired a new one is c
 #### Body
 
     {
-        user_id: String,
+        user_uuid: String,
         token: String,
         issued: Date,
         hours_valid: Number

@@ -1,6 +1,6 @@
 ---
 category: Packages
-path: '/packages/:id/channels'
+path: '/packages/:uuid/channels'
 title: 'Get Channels'
 type: 'GET'
 
@@ -11,7 +11,7 @@ Retrieve a list of available [Channels](#/get-channel) for a [Package](#/get-pac
 
 ### Request
 
-* **:id** must be an existing [Package](#/get-package) id.
+* **:uuid** must be an existing [Package](#/get-package) UUID.
 * Anonymous requests are allowed.
 
 ### Response
@@ -22,10 +22,10 @@ Returns an array of Channel objects.
 
     [
         {
-            id: String,
-            package_id: String,
+            uuid: String,
+            package_uuid: String,
             title: String,
-            parent_channel_id: String,
+            parent_channel_uuid: String,
             created_at: Date,
             updated_at: Date
         }

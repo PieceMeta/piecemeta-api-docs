@@ -1,6 +1,6 @@
 ---
 category: Packages
-path: '/packages/:id'
+path: '/packages/:uuid'
 title: 'Update'
 type: 'PUT'
 
@@ -11,7 +11,7 @@ Update an existing Package.
 
 ### Request
 
-* **:id** must be an existing Package id that you own.
+* **:uuid** must be an existing Package UUID that you own.
 * The headers must include a **valid [AccessToken](#/post-access-token)**.
 * Optional attributes are listed below.
 
@@ -29,8 +29,8 @@ Returns the updated Package object.
 #### Body
     
     {
-        id: String,
-        user_id: String,
+        uuid: String,
+        user_uuid: String,
         title: String,
         description: String,
         created_at: Date,

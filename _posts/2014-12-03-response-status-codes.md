@@ -17,8 +17,8 @@ When [retrieving a package](#/get-package) for example:
     Status: 200 OK
     
     {
-        id: String,
-        user_id: String,
+        uuid: String,
+        user_uuid: String,
         title: String,
         description: String,
         created_at: Date,

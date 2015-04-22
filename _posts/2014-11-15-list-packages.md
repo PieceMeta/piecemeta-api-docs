@@ -21,8 +21,8 @@ Returns an array of Package objects.
 
     [
         {
-            id: String,
-            user_id: String,
+            uuid: String,
+            user_uuid: String,
             title: String,
             description: String,
             created_at: Date,
