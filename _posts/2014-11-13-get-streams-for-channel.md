@@ -1,6 +1,6 @@
 ---
 category: Packages
-path: '/channels/:id/streams'
+path: '/channels/:uuid/streams'
 title: 'Get Streams'
 type: 'GET'
 
@@ -11,7 +11,7 @@ Retrieve a list of available [Streams](#/get-stream) for a [Channel](#/get-chann
 
 ### Request
 
-* **:id** must be an existing [Channel](#/get-channel) id.
+* **:id** must be an existing [Channel](#/get-channel) UUID.
 * Anonymous requests are allowed.
 
 ### Response
@@ -22,8 +22,8 @@ Returns an array of Stream objects but does not send the actual frame data for e
 
     [
         {
-            id: String,
-            channel_id: String,
+            uuid: String,
+            channel_uuid: String,
             title: String,
             group: String,
             fps: Number,
